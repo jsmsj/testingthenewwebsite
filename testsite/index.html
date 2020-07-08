@@ -1,0 +1,32 @@
+<?php
+if($_POST["message"]) {
+    mail("jsmsjofficial@gmail.com", "Form to email message", $_POST["message"], "From: an@email.address");
+}
+?>
+
+<!doctype>
+<html>
+	<head>
+		<title>
+			SuyashTM
+		</title>
+		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+		<style>
+			@font-face {
+				font-family:righteous;
+				src: url(righteous.ttf);
+			}
+		</style>
+	</head>
+	<body style="font-family:righteous;">
+		<div align="center">
+			<img src="logo.png" height="200px">
+		</div>
+		<div>
+		<form method="post" action="contact.php">
+    <textarea name="message"></textarea>
+    <input type="submit">
+</form>
+		</div>
+	</body>
+</html>
